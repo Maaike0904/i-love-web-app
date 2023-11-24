@@ -6,7 +6,7 @@
 2.  ```npm create vite@latest```
 3.  Project name: ```react-i-love-web```
 4.  Select framework: -> ```React```
-5.  Select variant: -> ```React```
+5.  Select variant: -> ```Typescript```
 6.  ```cd react-i-love-web```
 7.  ```npm install```(i)
 
