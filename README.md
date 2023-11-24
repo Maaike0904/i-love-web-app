@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-## Installatie
+## Installatie React
 
 1. Node.js installeren
 2.  ```npm create vite@latest```
