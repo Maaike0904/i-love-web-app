@@ -1,0 +1,44 @@
+:root {
+  /* Animaties */
+  --animation-quick: 0.2s;
+  --animation-default: 0.3s;
+
+  /* Eenheden */
+  --unit-deca: 10rem;
+  --unit-heading: 3rem;
+  --unit-large: 2rem;
+  --unit-default: 1rem;
+  --unit-small: 0.5rem;
+  --unit-micro: 0.25rem;
+  --unit-nano: 0.125rem;
+  --unit-pico: 0.5px;
+
+  /* Kleuren */
+  --primary-color: #ff9b38;
+  --secundary-purple-color: #b8c9ed;
+  --secundary-green-color: #b8f583;
+  --secundary-blue-color: #acf3f2;
+  /* --color-accent-100: #aaa;
+  --color-accent-75: #f0eded;
+  --color-accent-50: #f0f0eb;
+  --color-branding-primary: #0594c6;
+  --color-branding-secundary: #ffe700; */
+
+  /* Schaduwen  */
+  --shadow-default-cards: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* layout */
+body {
+  font-family: "Unbounded", sans-serif;
+  /* position: relative; */
+  background: linear-gradient(90deg, #f1ffe6 0.07%, #d2ddf4 99.92%);
+}
