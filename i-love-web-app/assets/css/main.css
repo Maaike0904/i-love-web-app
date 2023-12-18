@@ -14,10 +14,10 @@
   --unit-pico: 0.5px;
 
   /* Kleuren */
-  --primary-color: #ff9b38;
-  --secundary-purple-color: #b8c9ed;
-  --secundary-green-color: #b8f583;
-  --secundary-blue-color: #acf3f2;
+  --primary-color: hsl(29.849, 100%, 61%);
+  --secundary-purple-color: hsl(220.755, 60%, 83%);
+  --secundary-green-color: hsl(92.105, 85%, 74%);
+  --secundary-blue-color: hsl(179.155, 75%, 81%);
   /* --color-accent-100: #aaa;
   --color-accent-75: #f0eded;
   --color-accent-50: #f0f0eb;
@@ -41,4 +41,26 @@ body {
   font-family: "Unbounded", sans-serif;
   /* position: relative; */
   background: linear-gradient(90deg, #f1ffe6 0.07%, #d2ddf4 99.92%);
+}
+
+button {
+  color: white;
+  background: var(--primary-color);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border-style: none;
+  margin-right: 1rem;
+
+  font-family: "Unbounded", sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background: hsl(29.849, 100%, 51%);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin-right: 1rem;
 }

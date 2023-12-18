@@ -12,7 +12,7 @@
       </li>
       <li>
         <a
-          ><NuxtLink to="/"><span>Contact</span></NuxtLink></a
+          ><NuxtLink to="/"><button>Contact</button></NuxtLink></a
         >
       </li>
     </ul>
@@ -95,11 +95,6 @@ h1.name-homepage {
 }
 
 @media (min-width: 500px) {
-  /* Nav */
-  button.menu {
-    display: none;
-  }
-
   /* Main */
   h1 {
     font-size: 5em;
@@ -125,34 +120,19 @@ h1.name-homepage {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
   }
 
   li a {
     text-align: center;
     padding: 1em;
     text-decoration: none;
-    color: var(--darkblue);
+    color: #000;
     font-size: 1rem;
   }
 
   li a:hover {
     color: var(--primary-color);
-  }
-
-  li a span {
-    color: white;
-    background: var(--primary-color);
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    margin-right: 1rem;
-  }
-
-  li a span:hover {
-    color: #000;
-    background: var(--secundary-purple-color);
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    margin-right: 1rem;
   }
 
   h1 {
