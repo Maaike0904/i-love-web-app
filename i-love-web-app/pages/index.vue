@@ -20,6 +20,12 @@
   <main>
     <!-- <div class="card-1">Ischa Gast</div> -->
     <h1>WE LOVE WEB <br />PORTFOLIO</h1>
+    <div class="projects">
+      <button class="blog-button">Ischa Gast</button>
+      <button class="project-button">Eleventy project</button>
+      <button class="blog-button">Tim Borst</button>
+      <button class="project-button">Random Studio project</button>
+    </div>
     <h1 class="name-homepage">Maaike<br />Verplancke</h1>
   </main>
 </template>
@@ -150,7 +156,56 @@ h1.name-homepage {
   h1.name-homepage {
     text-align: right;
     /* width: 100vw; */
-    padding-top: 1em;
+  }
+
+  .projects {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 2em;
+  }
+
+  .blog-button:hover {
+    color: var(--secundary-purple-color);
+    background: none;
+  }
+
+  .blog-button {
+    background-color: var(--secundary-purple-color);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 150px;
+    border: 3px solid;
+    border-color: var(--secundary-purple-color);
+
+    font-family: "Unbounded", sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(5deg);
+  }
+
+  .project-butto:hover {
+    color: var(--secundary-green-color);
+    background: none;
+  }
+
+  .project-button {
+    background-color: var(--secundary-green-color);
+    color: white;
+
+    padding: 0.5em 1em;
+    border-radius: 150px;
+    border: 3px solid;
+    border-color: var(--secundary-green-color);
+
+    font-family: "Unbounded", sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(-5deg);
   }
 }
 </style>
