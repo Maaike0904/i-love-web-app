@@ -2,10 +2,15 @@
   <nav>
     <ul>
       <li>
-        <a><NuxtLink to="/">Alle blogs</NuxtLink></a>
+        <NuxtLink to="/">
+          <img src="public/logo-weloveweb.png" class="logo" alt="logo"
+        /></NuxtLink>
       </li>
       <li>
-        <a><NuxtLink to="/">Over mij</NuxtLink></a>
+        <a><NuxtLink to="/alleblogs">Alle blogs</NuxtLink></a>
+      </li>
+      <li>
+        <a><NuxtLink to="/overmij">Over mij</NuxtLink></a>
       </li>
       <li>
         <a><NuxtLink to="/">Mijn werk</NuxtLink></a>
@@ -35,72 +40,56 @@
 <style scoped>
 /* MOBIEL */
 /* Navigation */
-nav {
-  width: 100vw;
-  height: auto;
-  width: 100vw;
-  font-family: "Unbounded", sans-serif;
-}
-
-/* ul {
-  margin: 0;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  list-style: none;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-li a {
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-  color: var(--darkblue);
-  font-size: 1rem;
-}
-
-li a:hover {
-  color: var(--primary-color);
-}
-
-li a span {
-  color: white;
-  background: var(--primary-color);
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  margin-right: 1rem;
-}
-
-li a span:hover {
-  color: #000;
-  background: var(--secundary-purple-color);
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  margin-right: 1rem;
-} */
 
 /* Main */
-h1 {
-  width: 100vw;
-  height: 100%;
-
-  color: #000;
-  font-family: "Unbounded", sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-  line-height: 53px; /* 101.361% */
-  text-transform: uppercase;
-}
-
 h1.name-homepage {
   text-align: right;
   /* width: 100vw; */
   padding-top: 1em;
 }
 
+.projects {
+  padding: 1.2em;
+  align-items: center;
+}
+
+.blog-button {
+  background-color: var(--secundary-purple-color);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 150px;
+  border: 3px solid;
+  border-color: var(--secundary-purple-color);
+  box-shadow: -5px 5px 35px 1px rgb(188, 188, 188);
+
+  font-family: "Unbounded", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transform: rotate(5deg);
+}
+
+.project-button {
+  background-color: var(--secundary-green-color);
+  color: white;
+
+  padding: 0.5em 1em;
+  border-radius: 150px;
+  border: 3px solid;
+  border-color: var(--secundary-green-color);
+  box-shadow: -5px 5px 35px 1px rgb(188, 188, 188);
+
+  font-family: "Unbounded", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transform: rotate(-5deg);
+}
+
 @media (min-width: 500px) {
+  li:first-child {
+    margin-right: auto;
+  }
   /* Main */
   h1 {
     font-size: 5em;
@@ -109,38 +98,6 @@ h1.name-homepage {
 }
 
 @media (min-width: 900px) {
-  /* Navigation */
-  nav {
-    width: 100vw;
-    height: auto;
-    width: 100vw;
-    font-family: "Unbounded", sans-serif;
-  }
-
-  ul {
-    margin: 0;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    list-style: none;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  li a {
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
-    color: #000;
-    font-size: 1rem;
-  }
-
-  li a:hover {
-    color: var(--primary-color);
-  }
-
   h1 {
     width: 100vw;
     height: 100%;
@@ -156,13 +113,15 @@ h1.name-homepage {
   h1.name-homepage {
     text-align: right;
     /* width: 100vw; */
+    margin-top: -1.2em;
   }
 
   .projects {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    padding: 2em;
+    padding: 2.8em;
+    margin-top: -3.5em;
   }
 
   .blog-button:hover {
@@ -171,41 +130,18 @@ h1.name-homepage {
   }
 
   .blog-button {
-    background-color: var(--secundary-purple-color);
-    color: white;
-    padding: 0.5em 1em;
-    border-radius: 150px;
-    border: 3px solid;
-    border-color: var(--secundary-purple-color);
-
-    font-family: "Unbounded", sans-serif;
-    text-decoration: none;
-    font-size: 3rem;
-    cursor: pointer;
     display: inline-block;
-    transform: rotate(5deg);
+    font-size: 2.5rem;
   }
 
-  .project-butto:hover {
+  .project-button:hover {
     color: var(--secundary-green-color);
     background: none;
   }
 
   .project-button {
-    background-color: var(--secundary-green-color);
-    color: white;
-
-    padding: 0.5em 1em;
-    border-radius: 150px;
-    border: 3px solid;
-    border-color: var(--secundary-green-color);
-
-    font-family: "Unbounded", sans-serif;
-    text-decoration: none;
-    font-size: 3rem;
-    cursor: pointer;
     display: inline-block;
-    transform: rotate(-5deg);
+    font-size: 2.5rem;
   }
 }
 </style>
