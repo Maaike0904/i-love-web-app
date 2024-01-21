@@ -1,28 +1,4 @@
 <template>
-  <nav>
-    <ul>
-      <li>
-        <NuxtLink to="/">
-          <img src="public/logo-weloveweb.png" class="logo" alt="logo"
-        /></NuxtLink>
-      </li>
-      <li>
-        <a><NuxtLink to="/alleblogs">Alle blogs</NuxtLink></a>
-      </li>
-      <li>
-        <a><NuxtLink to="/overmij">Over mij</NuxtLink></a>
-      </li>
-      <li>
-        <a><NuxtLink to="/">Mijn werk</NuxtLink></a>
-      </li>
-      <li>
-        <a
-          ><NuxtLink to="/"><button>Contact</button></NuxtLink></a
-        >
-      </li>
-    </ul>
-  </nav>
-
   <!-- <div class="card-1">Ischa Gast</div> -->
   <h1>Alle blogs</h1>
   <!-- <div class="projects">
@@ -52,11 +28,6 @@
     </article>
 
     <article>
-      <h2>Eleventy project</h2>
-      <p></p>
-    </article>
-
-    <article>
       <h2>Tim borst</h2>
       <p>
         Tim Borst vertelde recentelijk over zijn loopbaan als front-end
@@ -79,11 +50,6 @@
         zoveel mogelijk van het leven te genieten.
       </p>
     </article>
-
-    <article>
-      <h2>Random studio project</h2>
-      <p></p>
-    </article>
   </main>
 </template>
 
@@ -103,8 +69,9 @@ li:first-child {
 
 article {
   padding: 2em;
-  border: 2px solid;
+  /* border: 2px solid; */
   border-radius: 20px;
+  background-color: var(--secundary-purple-color);
 }
 h1 {
   padding-bottom: 1em;
@@ -112,11 +79,5 @@ h1 {
 
 h2 {
   padding-bottom: 0.5em;
-}
-
-@media (min-width: 900px) {
-  h1 {
-    padding: 1em;
-  }
 }
 </style>

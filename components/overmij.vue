@@ -1,28 +1,4 @@
 <template>
-  <nav>
-    <ul>
-      <li>
-        <NuxtLink to="/">
-          <img src="public/logo-weloveweb.png" class="logo" alt="logo"
-        /></NuxtLink>
-      </li>
-      <li>
-        <a><NuxtLink to="/alleblogs">Alle blogs</NuxtLink></a>
-      </li>
-      <li>
-        <a><NuxtLink to="/overmij">Over mij</NuxtLink></a>
-      </li>
-      <li>
-        <a><NuxtLink to="/">Mijn werk</NuxtLink></a>
-      </li>
-      <li>
-        <a
-          ><NuxtLink to="/"><button>Contact</button></NuxtLink></a
-        >
-      </li>
-    </ul>
-  </nav>
-
   <h1>Over mij</h1>
   <main>
     <div class="kwaliteiten">
@@ -50,23 +26,23 @@
 
 <style scoped>
 main {
+  padding-top: -1em;
   padding: 1em;
-  max-width: 50%;
 }
 
 .kwaliteiten {
-  /* padding: 3em; */
-  display: grid;
-  gap: 1em;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-auto-flow: row; */
+  display: flex;
+  gap: 0.5em;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 label {
-  color: var(--secundary-purple-color);
+  color: black;
   padding: 1em;
-  border: 3px solid;
-  font-size: 2em;
+  /* border: 3px solid; */
+  background-color: var(--secundary-blue-color);
+  font-size: 1.5em;
   border-radius: 100px;
   text-align: center;
   align-content: center;

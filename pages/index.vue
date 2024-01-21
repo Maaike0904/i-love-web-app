@@ -1,30 +1,8 @@
 <template>
-  <nav>
-    <ul>
-      <li>
-        <NuxtLink to="/">
-          <img src="public/logo-weloveweb.png" class="logo" alt="logo"
-        /></NuxtLink>
-      </li>
-      <li>
-        <a><NuxtLink to="/alleblogs">Alle blogs</NuxtLink></a>
-      </li>
-      <li>
-        <a><NuxtLink to="/overmij">Over mij</NuxtLink></a>
-      </li>
-      <li>
-        <a><NuxtLink to="/">Mijn werk</NuxtLink></a>
-      </li>
-      <li>
-        <a
-          ><NuxtLink to="/"><button>Contact</button></NuxtLink></a
-        >
-      </li>
-    </ul>
-  </nav>
   <main>
     <!-- <div class="card-1">Ischa Gast</div> -->
     <h1>WE LOVE WEB <br />PORTFOLIO</h1>
+    <!-- <div class="ball b2"></div> -->
     <div class="projects">
       <button class="blog-button">Ischa Gast</button>
       <button class="project-button">Eleventy project</button>
@@ -51,6 +29,29 @@ h1.name-homepage {
 .projects {
   padding: 1.2em;
   align-items: center;
+
+  animation: linear fade-in-on-enter--fade-out-on-exit;
+  animation-timeline: view();
+}
+
+/* Scoll animation*/
+@keyframes fade-in-on-enter--fade-out-on-exit {
+  entry 0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  entry 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  exit 0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  exit 100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
 .blog-button {
@@ -101,6 +102,7 @@ h1.name-homepage {
   h1 {
     width: 100vw;
     height: 100%;
+    padding: 0em;
 
     color: #000;
     font-family: "Unbounded", sans-serif;
@@ -108,6 +110,8 @@ h1.name-homepage {
     font-weight: 700;
     line-height: 149px; /* 101.361% */
     text-transform: uppercase;
+
+    text-wrap: balance;
   }
 
   h1.name-homepage {
@@ -142,6 +146,23 @@ h1.name-homepage {
   .project-button {
     display: inline-block;
     font-size: 2.5rem;
+  }
+  .ball {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 50px auto 0;
+    border-radius: 50%;
+  }
+
+  .b2 {
+    background: radial-gradient(
+      circle at 65% 15%,
+      white 1px,
+      aqua 3%,
+      darkblue 60%,
+      aqua 100%
+    );
   }
 }
 </style>
