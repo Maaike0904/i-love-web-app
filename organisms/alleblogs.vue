@@ -1,12 +1,5 @@
 <template>
-  <!-- <div class="card-1">Ischa Gast</div> -->
   <h1>Alle blogs</h1>
-  <!-- <div class="projects">
-      <button class="blog-button">Ischa Gast</button>
-      <button class="project-button">Eleventy project</button>
-      <button class="blog-button">Tim Borst</button>
-      <button class="project-button">Random Studio project</button>
-    </div> -->
   <main>
     <article>
       <h2>Ischa gast</h2>
@@ -48,6 +41,22 @@
         <br />
         Tegenwoordig vervult Tim de rol van ontwerper en streeft hij ernaar
         zoveel mogelijk van het leven te genieten.
+      </p>
+    </article>
+
+    <article>
+      <h2>Fenna de Wilde</h2>
+      <p>
+        Fenna is een getalenteerde frontend developer die bekend staat om haar
+        creatieve bijdragen aan diverse websites, waaronder de betoverende
+        "moooi" website met scroll-animaties. Ze deelt haar passie voor het
+        verbeteren van webtoegankelijkheid, benadrukkend dat dit vaak over het
+        hoofd wordt gezien. Haar presentatie belicht verschillende aspecten,
+        zoals focusstaat, ARIA-attributen, toegankelijke carrousels, en aandacht
+        voor kleurcontrasten en lettergroottes. Fenna's inzet voor
+        toegankelijkheid gaat verder dan een trend; het is een cruciaal element
+        in haar ontwerpfilosofie, waarmee ze bruggen slaat tussen technologie en
+        gebruikers.
       </p>
     </article>
   </main>

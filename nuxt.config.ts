@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "I love web Maaike Verplancke",
+      pageTransition: { name: "page", mode: "out-in" },
     },
   },
 });

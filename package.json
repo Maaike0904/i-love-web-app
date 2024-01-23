@@ -16,5 +16,8 @@
     "vue-router": "^4.2.5"
   },
   "author": "Maaike Verplancke",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
 }

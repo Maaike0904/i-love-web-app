@@ -25,11 +25,6 @@
   @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap");
 }
 
-.is-high-contrast {
-  --secundary-purple-color: hsl(275, 100%, 26%);
-  --secundary-green-color: hsl(122, 100%, 18%);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
