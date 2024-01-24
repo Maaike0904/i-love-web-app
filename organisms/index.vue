@@ -1,3 +1,37 @@
+<script>
+import { onMounted, onUnmounted, ref } from "vue";
+import gsap from "gsap";
+
+export default {
+  setup() {
+    const main = ref();
+
+    onMounted(() => {
+      gsap.from("h1", {
+        duration: 1,
+        delay: 1,
+        opacity: 0,
+        scale: 0,
+      });
+
+      gsap.from(".blog-button", {
+        duration: 0.5,
+        delay: 1,
+        scale: 0,
+        stagger: 1,
+      });
+
+      gsap.from(".project-button", {
+        duration: 0.5,
+        delay: 2.5,
+        scale: 0,
+        stagger: 0.5,
+      });
+    });
+  },
+};
+</script>
+
 <template>
   <main>
     <!-- <div class="card-1">Ischa Gast</div> -->
@@ -12,8 +46,7 @@
     <h1 class="name-homepage">Maaike<br />Verplancke</h1>
   </main>
 </template>
-
-<script setup></script>
+<script></script>
 
 <style scoped>
 /* MOBIEL */
@@ -29,9 +62,6 @@ h1.name-homepage {
 .projects {
   padding: 1.2em;
   align-items: center;
-
-  animation: linear fade-in-on-enter--fade-out-on-exit;
-  animation-timeline: view();
 }
 
 /* Scoll animation*/

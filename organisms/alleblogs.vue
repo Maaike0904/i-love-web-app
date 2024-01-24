@@ -1,8 +1,15 @@
+<script setup>
+// import { useNextApp } from "nuxt/app";
+// const { $client } = useNuxtApp();
+// const data = await $client.getEntries();
+// console.log(data);
+</script>
+
 <template>
   <h1>Alle blogs</h1>
   <main>
     <article>
-      <h2>Ischa gast</h2>
+      <h2>Ischa Gast</h2>
       <p>
         Ischa, werkzaam bij Schiphol, is actief bezig met het bevorderen van
         toegankelijkheid op het web. Hij deelde met ons dat de gemiddelde

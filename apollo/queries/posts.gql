@@ -1,0 +1,13 @@
+{
+  "objects": [
+    {
+      "slug": "blog",
+      "title": "blog",
+      "metadata": {
+        "title": "Ischa Gast",
+        "text": "<p id=\"isPasted\">&nbsp; &nbsp; &nbsp; &nbsp; Ischa, werkzaam bij Schiphol, is actief bezig met het bevorderen van</p><p>&nbsp; &nbsp; &nbsp; &nbsp; toegankelijkheid op het web. Hij deelde met ons dat de gemiddelde</p><p>&nbsp; &nbsp; &nbsp; &nbsp; website meer dan 50 toegankelijkheidsfouten heeft op de startpagina. Dit</p><p>&nbsp; &nbsp; &nbsp; &nbsp; is problematisch, gezien het feit dat 100% van de mensen op enig moment</p><p>&nbsp; &nbsp; &nbsp; &nbsp; in hun leven met beperkingen te maken krijgt. Verschillende soorten</p><p>&nbsp; &nbsp; &nbsp; &nbsp; beperkingen zijn onder andere motorische, auditieve, visuele,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; cognitieve, vermoeidheids- en ouderdomsbeperkingen. Om de</p><p>&nbsp; &nbsp; &nbsp; &nbsp; toegankelijkheid van een webpagina te verbeteren, is het raadzaam</p><p>&nbsp; &nbsp; &nbsp; &nbsp; rekening te houden met de volgende aspecten: HTML-structuur Kopstructuur</p><p>&nbsp; &nbsp; &nbsp; &nbsp; Focus-stijlen Kleurcontrast Het kan soms handig zijn om &#39;hiddentext&#39; aan</p><p>&nbsp; &nbsp; &nbsp; &nbsp; links toe te voegen. Om de toegankelijkheid op jouw website te</p><p>&nbsp; &nbsp; &nbsp; &nbsp; verbeteren, kunnen de volgende tools van pas komen: WebDev Toolbar</p><p>&nbsp; &nbsp; &nbsp; &nbsp; PageSpeed Insights Color Contrast Analyzer</p>"
+      }
+    }
+  ],
+  "total": 1
+}

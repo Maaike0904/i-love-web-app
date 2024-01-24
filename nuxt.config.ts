@@ -10,7 +10,15 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "I love web Maaike Verplancke",
-      pageTransition: { name: "page", mode: "out-in" },
     },
+    // modules: ["@nuxtjs/apollo"],
+    // apollo: {
+    //   clientConfigs: {
+    //     default: {
+    //       httpEndpoint:
+    //         process.env.BACKEND_URL || "http://localhost:3000/graphql",
+    //     },
+    //   },
+    // },
   },
 });
